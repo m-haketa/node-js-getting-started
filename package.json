@@ -1,31 +1,16 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
-  "engines": {
-    "node": "14.x"
-  },
-  "main": "index.js",
+  "name": "heroku-nextjs-custom-server-express",
+  "version": "3.0.0",
+  "description": "Deploy Next.js server-side React apps using a custom Express server to Heroku",
   "scripts": {
-    "start": "node index.js",
-    "test": "node test.js"
+    "dev": "node server/index.js -p $PORT",
+    "build": "next build",
+    "start": "NODE_ENV=production node server/index.js -p $PORT"
   },
   "dependencies": {
-    "ejs": "^3.1.5",
-    "express": "^4.15.2"
-  },
-  "devDependencies": {
-    "got": "^11.3.0",
-    "tape": "^4.7.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
-  },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
-  "license": "MIT"
+    "express": "^4.17.1",
+    "next": "^12.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
 }
